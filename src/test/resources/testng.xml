@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SelenideAutoTests" verbose="1">
+
+    <listeners>
+        <listener class-name="trends.ui.utils.baseTest.BaseTestListener"/>
+    </listeners>
+
+    <test name="Tests">
+        <classes>
+            <class name="trends.ui.tests.ExampleTest">
+                <methods>
+                    <include name="exampleTest"/>
+                </methods>
+            </class>
+            <class name="trends.ui.tests.HomepageTest">
+                <methods>
+                    <include name="openTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

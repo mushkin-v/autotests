@@ -1,0 +1,46 @@
+{
+    "safari": {
+        "default": "13.1.1",
+        "versions": {
+            "13.1.1": {
+                "image": ["/usr/bin/safaridriver"]
+            }
+        }
+    },
+    "chrome": {
+        "default": "83.0",
+        "versions": {
+            "83.0": {
+                "image": "selenoid/vnc_chrome:83.0",
+                "port": "4444",
+                "path": "/",
+                "tmpfs": {
+                    "/tmp": "size=128m"
+                }
+            }
+        }
+    },
+    "chrome-mobile": {
+        "default": "mobile-79.0",
+        "versions": {
+            "mobile-79.0": {
+                "image": "selenoid/chrome-mobile:79.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            }
+        }
+    },
+    "firefox": {
+        "default": "78.0",
+        "versions": {
+            "78.0": {
+                "image": "selenoid/vnc_firefox:78.0",
+                "port": "4444",
+                "path": "/wd/hub",
+                "tmpfs": {
+                    "/tmp": "size=128m"
+                }
+            }
+        }
+    }
+}
